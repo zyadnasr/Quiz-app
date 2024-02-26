@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+:root{
+    --main-color: #001e4d;
+    --white-color: #fff;
+    --alt-white-color: #222;
+    --main-transition: .5s;
+}
+body {
+    background: var(--main-color);
+    font-family: 'Cairo', sans-serif;
+}
+.app {
+    width: 90%;
+    max-width: 600px;
+    background: #fff;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+}
+.app h1 {
+    font-size: 25px;
+    color: var(--main-color);
+    font-weight: 600;
+    border-bottom: 1px solid #333;
+    padding-bottom: 30px;
+}
+.quiz {
+    padding: 20px 0;
+}
+.quiz h2 {
+    font-size: 18px;
+    color: var(--main-color);
+    font-weight: 600;
+}
+.btn {
+    background: var(--white-color);
+    color: var(--alt-white-color);
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid var(--alt-white-color);
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.btn:disabled {
+    cursor: no-drop;
+}
+.btn:hover:not([disabled]) {
+    background: var(--alt-white-color);
+    color: var(--white-color);
+    transition:all var(--main-transition);
+}
+#next-btn {
+    background: var(--main-color);
+    color: var(--white-color);
+    font-weight: 500;
+    width: 150px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    display: none;
+}
+.correct {
+    background: #9aeabc;
+}
+.wrong {
+    background: #ff9393;
+}
